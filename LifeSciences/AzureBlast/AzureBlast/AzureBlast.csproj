@@ -151,6 +151,20 @@
     <Compile Include="Databases\IExternalRepositoryManager.cs" />
     <Compile Include="Databases\SystemDatabaseProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+
+    <Compile Include="Analyses\AzureAnalysisProvider.cs" />
+    <Compile Include="Analyses\IAnalysisProvider.cs" />
+    <Compile Include="Analyses\QueryOutput.cs" />
+    <Compile Include="Analyses\QueryState.cs" />
+    <Compile Include="Analyses\Analysis.cs" />
+    <Compile Include="Analyses\AnalysisInputFile.cs" />
+    <Compile Include="Analyses\AnalysisSpecification.cs" />
+    <Compile Include="Analyses\AnalysisState.cs" />
+    <Compile Include="Analyses\TimeSpanExtensions.cs" />
+    <Compile Include="Storage\Entities\AnalysisQueryEntity.cs" />
+
+
     <Compile Include="Searches\AzureSearchProvider.cs" />
     <Compile Include="Searches\ISearchProvider.cs" />
     <Compile Include="Searches\QueryOutput.cs" />
@@ -168,6 +182,10 @@
     <Compile Include="Storage\Blob.cs" />
     <Compile Include="Storage\Entities\DatabaseEntity.cs" />
     <Compile Include="Storage\Entities\SearchEntity.cs" />
+    
+    <Compile Include="Storage\Entities\AnalysisEntity.cs" />
+
+
     <Compile Include="Storage\IBlobStorageProvider.cs" />
     <Compile Include="Storage\ITableStorageProvider.cs" />
     <Compile Include="Storage\StorageCredentials.cs" />

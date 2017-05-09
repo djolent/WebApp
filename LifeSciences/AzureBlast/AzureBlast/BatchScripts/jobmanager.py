@@ -17,6 +17,13 @@ def get_state(table_name, all_tasks_complete, any_failures):
             return 'Complete'
         return 'Running'
 
+    if table_name == 'AnalysisEntity':
+        if all_tasks_complete and any_failures:
+            return 'Error'
+        if all_tasks_complete:
+            return 'Complete'
+        return 'Running'
+
     if table_name == 'DatabaseEntity':
         if all_tasks_complete and any_failures:
             return 'ImportingFailed'

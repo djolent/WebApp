@@ -15,13 +15,15 @@ if __name__ == '__main__':
     table_service = TableService(account_name=storage_account,
                                  account_key=storage_key)
 
-    entity = table_service.get_entity('SearchEntity', entity_pk, entity_rk)
+#   entity = table_service.get_entity('SearchEntity', entity_pk, entity_rk)
+    entity = table_service.get_entity('AnalysisEntity', entity_pk, entity_rk)
 
     try:
         if entity._State == 'WaitingForResources':
             entity._State = state
             if error:
                 entity.Errors = error
-            table_service.update_entity('SearchEntity', entity, if_match=entity.etag)
+#           table_service.update_entity('SearchEntity', entity, if_match=entity.etag)
+            table_service.update_entity('AnalysisEntity', entity, if_match=entity.etag)
     except Exception as e:
         print('Error updating entityt {}'.format(e))
