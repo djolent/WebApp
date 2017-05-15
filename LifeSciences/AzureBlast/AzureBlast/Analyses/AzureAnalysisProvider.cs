@@ -447,7 +447,7 @@ namespace Microsoft.Azure.Batch.Blast.Analyses
             _tableStorageProvider.UpdateEntity(entity);
         }
 
-        public IEnumerable<AnalysisEntity> ListAnalysises()
+        public IEnumerable<AnalysisEntity> ListAnalyses()
         {
             return _tableStorageProvider.ListEntities<AnalysisEntity>(AnalysisEntity.AllUsersPk);
         }
