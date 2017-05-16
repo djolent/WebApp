@@ -10,6 +10,8 @@ namespace Microsoft.Azure.Blast.Web.Models
         public int QueryId { get; set; }
 
         public string SearchName { get; set; }
+        
+        public string AnalysisName { get; set; }
 
         public string Filename { get; set; }
     }
