@@ -13,6 +13,7 @@ using Microsoft.Azure.Batch.Blast.Databases;
 using Microsoft.Azure.Batch.Blast.Databases.ExternalSources;
 using Microsoft.Azure.Batch.Blast.Databases.Imports;
 using Microsoft.Azure.Batch.Blast.Searches;
+using Microsoft.Azure.Batch.Blast.Analyses;
 using Microsoft.Azure.Batch.Blast.Storage;
 using BatchCredentials = Microsoft.Azure.Batch.Blast.Batch.BatchCredentials;
 
@@ -56,6 +57,11 @@ namespace Microsoft.Azure.Blast.Web
                 c.Resolve<BlastConfiguration>(),
                 c.Resolve<IDatabaseProvider>()))
                 .As<ISearchProvider>();
+
+            builder.Register(c => new AzureAnalysisProvider(
+                c.Resolve<BlastConfiguration>(),
+                c.Resolve<IDatabaseProvider>()))
+                .As<IAnalysisProvider>();
 
             // autowire
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
