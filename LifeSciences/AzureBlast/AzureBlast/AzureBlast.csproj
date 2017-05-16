@@ -213,6 +213,9 @@
     <Content Include="BatchScripts\SearchJobManager.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="BatchScripts\AnalysisJobManager.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="BatchScripts\jobmanager.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
