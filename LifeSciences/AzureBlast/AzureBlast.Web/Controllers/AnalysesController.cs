@@ -15,6 +15,7 @@ namespace Microsoft.Azure.Blast.Web.Controllers
         private readonly BlastConfiguration _configuration;
         private readonly IAnalysisProvider _analysisProvider;
 
+        public AnalysesController(){}
         public AnalysesController(BlastConfiguration configuration, IAnalysisProvider analysisProvider)
         {
             _configuration = configuration;
