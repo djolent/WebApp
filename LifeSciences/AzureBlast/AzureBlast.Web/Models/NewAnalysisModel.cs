@@ -11,6 +11,6 @@ namespace Microsoft.Azure.Blast.Web.Models
     public class NewAnalysisModel
     {
         public List<string> VirtualMachineSizes { get; set; }
-        public List<string> BlastExecutables { get; set; }
+      //  public List<string> BlastExecutables { get; set; }
     }
 }
