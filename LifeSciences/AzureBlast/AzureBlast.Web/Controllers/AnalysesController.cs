@@ -32,7 +32,7 @@ namespace Microsoft.Azure.Blast.Web.Controllers
         {
             var model = new NewAnalysisModel
             {
-             //   BlastExecutables = new List<string>(new string[] {"blastp", "blastn", "blastx", "tblastn", "tblastx"}),
+                BlastExecutables = new List<string>(new string[] {"blastp", "blastn", "blastx", "tblastn", "tblastx"}),
                 VirtualMachineSizes = _configuration.GetVirtualMachineSizes(),
             };
             return View(model);

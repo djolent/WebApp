@@ -8,6 +8,7 @@ namespace Microsoft.Azure.Batch.Blast.Analyses
     public class AnalysisSpecification
     {
         public string Name { get; set; }
+	
 
         public string DatabaseName { get; set; }
 
